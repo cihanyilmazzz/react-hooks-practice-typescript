@@ -1,0 +1,72 @@
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.course-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.view-course-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.course-detail {
+  margin-top: 20px;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.module h3, .lesson h4 {
+  cursor: pointer;
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.module h3:hover, .lesson h4:hover {
+  background-color: #e9ecef;
+}
+
+video, audio {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+}
